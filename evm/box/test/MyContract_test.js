@@ -5,7 +5,7 @@ const { expectRevert, time } = require('openzeppelin-test-helpers')
 
 contract('MyContract', accounts => {
   const LinkToken = artifacts.require('LinkToken.sol')
-  const Oracle = artifacts.require('Oracle.sol')
+  const Oracle = require('@chainlink/contracts/truffle/v0.4/Oracle')
   const MyContract = artifacts.require('MyContract.sol')
 
   const defaultAccount = accounts[0]
